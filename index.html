@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Sections</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    section {
+      height: 100vh;
+      padding: 20px;
+      border: 1px solid #ccc;
+      overflow: auto;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    form input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    form button {
+      margin-top: 15px;
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    form button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#elementary">Elementary</a>
+    <a href="#intermediate">Intermediate</a>
+    <a href="#secondary">Secondary</a>
+  </nav>
+
+  <section id="elementary" style="background-color: #f9c2ff;">
+    <h1>Welcome to Elementary</h1>
+    <form action="mailto:ahmed.khamis15@yahoo.com" method="POST" enctype="text/plain">
+      <label>1. What is 2 + 2?</label>
+      <input type="radio" id="q1a1" name="q1" value="3">
+      <label for="q1a1">3</label><br>
+      <input type="radio" id="q1a2" name="q1" value="4">
+      <label for="q1a2">4</label><br>
+      <input type="radio" id="q1a3" name="q1" value="5">
+      <label for="q1a3">5</label><br>
+      <input type="radio" id="q1a4" name="q1" value="6">
+      <label for="q1a4">6</label>
+
+      <label>2. What color is the sky on a clear day?</label>
+      <input type="radio" id="q2a1" name="q2" value="Blue">
+      <label for="q2a1">Blue</label><br>
+      <input type="radio" id="q2a2" name="q2" value="Red">
+      <label for="q2a2">Red</label><br>
+      <input type="radio" id="q2a3" name="q2" value="Green">
+      <label for="q2a3">Green</label><br>
+      <input type="radio" id="q2a4" name="q2" value="Yellow">
+      <label for="q2a4">Yellow</label>
+
+      <label>3. What is the capital of France?</label>
+      <input type="radio" id="q3a1" name="q3" value="Berlin">
+      <label for="q3a1">Berlin</label><br>
+      <input type="radio" id="q3a2" name="q3" value="Paris">
+      <label for="q3a2">Paris</label><br>
+      <input type="radio" id="q3a3" name="q3" value="Rome">
+      <label for="q3a3">Rome</label><br>
+      <input type="radio" id="q3a4" name="q3" value="Madrid">
+      <label for="q3a4">Madrid</label>
+
+      <label>4. Which is the largest planet in our solar system?</label>
+      <input type="radio" id="q4a1" name="q4" value="Earth">
+      <label for="q4a1">Earth</label><br>
+      <input type="radio" id="q4a2" name="q4" value="Mars">
+      <label for="q4a2">Mars</label><br>
+      <input type="radio" id="q4a3" name="q4" value="Jupiter">
+      <label for="q4a3">Jupiter</label><br>
+      <input type="radio" id="q4a4" name="q4" value="Venus">
+      <label for="q4a4">Venus</label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="intermediate" style="background-color: #a2d2ff;">
+    <h1>Welcome to Intermediate</h1>
+    <form>
+      <label for="favorite-subject">What is your favorite subject?</label>
+      <select id="favorite-subject" name="favorite-subject">
+        <option value="math">Math</option>
+        <option value="science">Science</option>
+        <option value="history">History</option>
+        <option value="english">English</option>
+      </select>
+
+      <label for="hobbies">What are your hobbies?</label>
+      <textarea id="hobbies" name="hobbies" rows="4" placeholder="Describe your hobbies"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="secondary" style="background-color: #bde0fe;">
+    <h1>Welcome to Secondary</h1>
+    <form>
+      <label for="career-goals">What are your career goals?</label>
+      <textarea id="career-goals" name="career-goals" rows="4" placeholder="Describe your career goals"></textarea>
+
+      <label for="preferred-university">What is your preferred university?</label>
+      <input type="text" id="preferred-university" name="preferred-university" placeholder="Enter university name">
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</body>
+</html>
